@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import com.example.Project_Nhom23.Login.SignUpActivity;
 import com.example.Project_Nhom23.MainActivity;
 import com.example.kiemtra.R;
 

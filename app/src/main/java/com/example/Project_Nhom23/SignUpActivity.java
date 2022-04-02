@@ -25,13 +25,13 @@ public class SignUpActivity extends AppCompatActivity {
         editTextname=findViewById(R.id.editTextTextName);
         editTextnumber=findViewById(R.id.editTextTextNumber);
 
-    button_signup.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent=new Intent(SignUpActivity.this,LoginActivity.class);
-            startActivity(intent);
-        }
-    });
+        button_signup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(SignUpActivity.this,LoginActivity.class);
+                startActivity(intent);
+            }
+        });
 
     }
 }
