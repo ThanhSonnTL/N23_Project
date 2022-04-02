@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.Project_Nhom23.Login.SignUpActivity;
 import com.example.Project_Nhom23.MainActivity;
@@ -37,8 +38,7 @@ public class LoginActivity extends AppCompatActivity {
         signuptv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i= new Intent(getApplicationContext(), SignUpActivity.class);
-                startActivity(i);
+                Toast.makeText(LoginActivity.this,"Sign up",Toast.LENGTH_SHORT).show();
             }
         });
     }
