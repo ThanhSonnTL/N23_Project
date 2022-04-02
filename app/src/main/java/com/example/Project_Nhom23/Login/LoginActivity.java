@@ -10,8 +10,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.Project_Nhom23.Login.SignUpActivity;
+
 import com.example.Project_Nhom23.MainActivity;
+import com.example.Project_Nhom23.SignUp;
 import com.example.kiemtra.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -38,7 +39,8 @@ public class LoginActivity extends AppCompatActivity {
         signuptv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(LoginActivity.this,"Sign up",Toast.LENGTH_SHORT).show();
+                Intent i=new Intent(LoginActivity.this, SignUp.class);
+                startActivity(i);
             }
         });
     }

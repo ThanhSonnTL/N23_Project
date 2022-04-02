@@ -22,7 +22,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name="com.example.Project_Nhom23.SignUp"
+            android:exported="false"/>
 
 
 

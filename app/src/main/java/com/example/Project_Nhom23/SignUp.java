@@ -1,4 +1,6 @@
-package com.example.Project_Nhom23.Login;
+package com.example.Project_Nhom23;
+
+
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,9 +11,10 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.Project_Nhom23.Login.LoginActivity;
 import com.example.kiemtra.R;
 
-public class SignUpActivity extends AppCompatActivity {
+public class SignUp extends AppCompatActivity {
     private EditText editTextemail,editTextname,editTextnumber,editTextpw,editTextconfirm;
     private Button button_signup;
 
@@ -28,7 +31,7 @@ public class SignUpActivity extends AppCompatActivity {
         button_signup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent=new Intent(SignUpActivity.this,LoginActivity.class);
+                Intent intent=new Intent(SignUp.this, LoginActivity.class);
                 startActivity(intent);
             }
         });
